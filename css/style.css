@@ -12,6 +12,7 @@
     --white-transparent: rgba(255, 255, 255, 0.308);
     --color-1: rgb(0, 0, 0);
     --color-2: rgb(32, 32, 23);
+    --color-2-1: rgba(32, 32, 23, 0.349);
     --color-3: rgb(187, 82, 34);
 
     --color-4: rgb(78, 96, 250);
@@ -82,7 +83,6 @@ ul, li {
 }
 
 
-
 .slider-info {
   display: flex;
   flex-direction: column;
@@ -120,4 +120,30 @@ ul, li {
   color: var(--color-2);
   font-size: 2rem;
   transition: 1s;
+}
+
+.extra-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.extra-info .extra-info__card{
+  display: flex;
+  max-width: 28rem;
+  margin: 3rem 0;
+}
+
+.extra-info .extra-info__card span{
+  margin-right: 3rem;
+  align-self: center;
+}
+
+hr {
+  width: 70%;
+  border: none;
+  background-color: var(--color-2-1);
+  height: 2px;
+  margin-bottom: .5rem;
 }
