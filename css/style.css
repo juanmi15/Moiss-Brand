@@ -1,0 +1,83 @@
+ 
+ :root{
+    --font-logo: 'Aclonica', sans-serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+    --font-info: 'Urbanist', sans-serif;
+ 
+    --font-size-lg: 3rem;
+    --font-size-md: 2.1rem;
+    --font-size-sm: 1.8rem;
+
+    --white: #fff;
+    --white-transparent: rgba(255, 255, 255, 0.308);
+    --color-1: #1ba;
+    --color-2: #ffa;
+    --color-3: rgb(187, 82, 34);
+
+    --color-4: rgb(78, 96, 250);
+
+}
+
+*{
+ box-sizing: border-box;
+ padding: 0%;
+ margin: 0%;
+}
+
+html{
+ font-size: 62.5%;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body{
+    font-family: var(--font-body);
+    font-size: 16px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.header-navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .3rem 1rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+}
+
+.header-navbar .navbar__logo {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-logo);
+}
+
+
+.header-navbar .navbar__icons-menu{
+  
+}
+
+.header-navbar .navbar__icons-menu span{
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+
+
+.slider-img{
+  display: flex;
+  height: 70vh;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: .5rem;
+
+}
+
+.slider-img .img{
+  scroll-snap-align: center;
+  
+}
+
